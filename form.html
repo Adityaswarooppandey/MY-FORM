@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>My form</title>
+<link rel="stylesheet" href="form.css">
+<link rel="shortcut icon" href="https://img1a.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico">
+<script>
+function fun()
+{
+  alert(" Oncethe form is submitted can't be undone");
+}
+function psswd()
+{
+  alert(" The password should contain atleast one uppercase , lowercase and special character");
+}
+</script>
+</head>
+<body>
+<form method="POST" onsubmit ="fun()">
+
+<fieldset>
+<legend> personal deatils</legend>
+<table>
+<tr>
+<th>First name</th>
+<td> <input type="text"  placeholder="enter first name"></td>
+</tr>
+<tr>
+<th>Last name</th>
+<td> <input type="text" placeholder="enter last name"></td>
+</tr>
+<tr>
+<th>Password</th>
+<td> <input type="password" onclick ="psswd()"></td>
+</tr>
+<tr>
+<th>Address</th>
+<td><textarea></textarea><td>
+</tr>
+<tr>
+<th> branch</th>
+<td> 
+<select>
+ <option>--SELECT--</option>
+ <option>CE</option>
+ <option>CSE</option>
+ <option>ME</option>
+ <option>EE</option>
+ <option>EL</option>
+  <option>IT</option>
+</select>
+</td>
+</tr>
+<tr>
+<tr>
+<th>Language you know</th>
+<td><input type="radio" name="language" value="english">english</button></td>
+<td><input type="radio" name="language"value="hindi">hindi</button></td>
+<td><input type="radio" name="language"value="spanish">spanish</button></td>
+</tr>
+<tr>
+<th> CHOOSE YOUR LEADER</th>
+<td><input type="checkbox"> modi</td>
+<td><input type="checkbox"> rahul</td>
+<td><input type="checkbox"> other</td>
+</tr>
+<tr>
+<th>gender<th>
+<td><input type="radio" name="gender" value="male">male</button></td>
+<td><input type="radio" name="gender"value="female">female</button></td>
+<td><input type="radio" name="gender"value="other">other</button></td>
+</tr>
+<tr>
+<td><button type="submit"><a href="submit.html" target="blank" style="text-decoration:none"> SUBMIT </a></button></td>
+<td><button type="reset"> RESET </button></td>
+</tr>
+
+
+
+
+
+
+
+</table>
+</fieldset>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
